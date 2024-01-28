@@ -25,7 +25,7 @@ cacheSolve <- function(cacheMatrix, ...) {
   inv <- cacheMatrix$getinverse()
   
   if (!is.null(inv)) {
-    message("Getting cached data")
+    message("getting cached data")
     return(inv)
   }
 
@@ -37,5 +37,6 @@ cacheSolve <- function(cacheMatrix, ...) {
   inv
 }
 
+# Example:
 my_matrix <- makeCacheMatrix (matrix(c(1,2,3,4), nrow = 2))
 cacheSolve(my_matrix)
